@@ -1,0 +1,65 @@
+name: hava
+description: "Smart Health & AQI Companion — know when to breathe, run, or stay in."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # ── State management ──
+  flutter_riverpod: ^2.6.1
+
+  # ── Navigation ──
+  go_router: ^14.8.1
+
+  # ── Networking ──
+  dio: ^5.7.0
+
+  # ── Local storage / caching ──
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+
+  # ── Location ──
+  geolocator: ^13.0.2
+  geocoding: ^3.0.0
+
+  # ── Charts ──
+  fl_chart: ^0.70.2
+
+  # ── Animations ──
+  flutter_animate: ^4.5.2
+
+  # ── Notifications ──
+  flutter_local_notifications: ^18.0.1
+
+  # ── Background tasks (Android) ──
+  workmanager: ^0.9.0
+
+  # ── Misc ──
+  intl: ^0.20.2
+  google_fonts: ^6.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icons/logo.png"
+  min_sdk_android: 21
+  remove_alpha_ios: true
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
+    - assets/icons/
